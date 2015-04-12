@@ -1,0 +1,36 @@
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+// Class
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body { padding-top: 200px; } @media screen and (max-width: 40px) { body { padding-top: 0px; } }
+// Class
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.myself {
+  background-color: yellow;
+}
+
+.fc-corner-right  {  margin-left: none;}
+
+.fc-day-number {   opacity: 0.5; }
+.fc-other-month { opacity: 0.1;}
+@media (max-width: 768px) { 
+  .fc-day-header { line-height: 40px;  background-color: transparent !important; 
+    text-shadow: none !important; color: black !important;  }
+  th.fc-day-header  { border-style: none;}
+  td.fc-widget-header { border-style: none !important;}
+  tr {min-height: 100px;}
+}
