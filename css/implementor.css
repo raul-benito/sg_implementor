@@ -12,7 +12,7 @@
   margin-right: auto;
 }
 
-body { padding-top: 200px; } @media screen and (max-width: 40px) { body { padding-top: 0px; } }
+body { padding-top: 4em; } @media screen and (max-width: 40px) { body { padding-top: 0px; } }
 // Class
 .center-block {
   display: block;
@@ -22,6 +22,18 @@ body { padding-top: 200px; } @media screen and (max-width: 40px) { body { paddin
 .myself {
   background-color: yellow;
 }
+
+@media (max-width: 768px){
+.nav-pills.nav-justified > li {
+    float: left;
+    }
+}
+
+@media (min-width: 768px){
+    .nav-pills.nav-justified > li {
+        float: none;
+        }
+    }
 
 .fc-corner-right  {  margin-left: none;}
 
