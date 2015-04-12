@@ -102,7 +102,30 @@
         <div id="mycalendar"></div>
       </div>
 </div>
-    <div role="tabpanel" class="tab-pane" id="task">Task</div>
+    <div role="tabpanel" class="tab-pane" id="task">
+      <form class="form-horizontal">
+        <ul class="list-group">
+      <li class="list-group-item">
+          <label><input type="checkbox" id="task1"> Decide on Key Components</label>
+        </li>  
+        <li class="list-group-item">
+          <label><input type="checkbox" id="task2"> Get a quote from 3 providers</label>
+        </li>
+        <li class="list-group-item">
+          <label><input type="checkbox" id="task3"> Put an order</label>
+        </li>
+        <li class="list-group-item">
+          <label><input type="checkbox" id="task4"> Test</label>
+        </li>
+        <li class="list-group-item">
+          <label><input type="checkbox" id="task2"> Adapt</label>
+        </li>
+        </ul> 
+        <div class="text-center">
+<button type="button" class="btn btn-lg btn-danger">Add Task</button>
+</div> 
+      </form>
+    </div>
   </div>
 <div id="fullCalModal" class="modal fade">
     <div class="modal-dialog">
@@ -119,8 +142,15 @@
         </div>  
         <div class="form-group">
           <label for="responsible">Responsible:</label>
-          
-      </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-user"></span>My Self<span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu list-inline" role="menu">
+        <li><span class="glyphicon glyphicon-user"></span>My Self</li>
+        <li><span class="glyphicon glyphicon-user"></span>My Buddy</li>       
+    </ul>
+</div>      </div>
 
     </form>
             </div>
